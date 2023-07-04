@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+    crossorigin="anonymous"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+
+  <style>
+    form {
+      background-color: #fbebd8;
+      border: 2px solid #c44953;
+      padding: 20px;
+      border-radius: 20px;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #f5ad90, #dda1a1)
+    }
+    h1 {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Registration Form -->
+    <section id="home">
+      <div class="container py-5 vh-100">
+        <div class="row d-flex align-items-center justify-content-center h-100">
+          <div class="col-md-8 col-lg-7 col-xl-6">
+            <div class="content mt-1">
+              <h1 class="display-3 fw-bold lh-1"> REGISTER NOW</h1>
+            </div>
+            <img src="images/sign.png" alt="Image Description" class="img-fluid">
+          </div>
+          <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+            <form id="registrationForm">
+              <p class="text-center mt-2">
+                Please fill out all necessary information. Or you can <a href="dashboard.html">fill out later.</a>
+              </p>
+
+              <div class="form-outline mt-2">
+                <label class="form-label fw-bold" for="fullName">Full Name</label>
+                <input type="text" id="fullName" class="form-control form-control-lg" placeholder="Enter your full name" >
+              </div>
+
+
+              <div class="form-outline mt-4">
+                <label class="form-label fw-bold" for="email">Email</label>
+                <input type="email" id="email" class="form-control form-control-lg" placeholder="Enter your email" >
+              </div>
+
+              <div class="form-outline mt-2 me-2">
+                <label class="form-label fw-bold" for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" class="form-control form-control-lg" placeholder="Enter your phone number" >
+              </div>
+
+              <div class="form-outline mt-2">
+                <label class="form-label fw-bold" for="birthday">Birthday</label>
+                <input type="date" id="birthday" class="form-control form-control-lg" >
+              </div>
+
+              <div class="d-flex justify-content-center text-lg-start mt-4">
+                <button class="w-100 btn btn-lg btn-danger" type="submit">
+                  Register
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+
+      
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const registrationForm = document.getElementById("registrationForm");
+    
+        registrationForm.addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent form submission
+    
+          const fullNameInput = document.getElementById("fullName");
+          const emailInput = document.getElementById("email");
+          const phoneNumberInput = document.getElementById("phoneNumber");
+          const birthdayInput = document.getElementById("birthday");
+    
+          function registration() {
+            const fullName = fullNameInput.value.trim();
+            const email = emailInput.value.trim();
+            const phoneNumber = phoneNumberInput.value.trim();
+            const birthday = birthdayInput.value;
+    
+            if (fullName === "") {
+              showAlert("Please enter your full name.");
+              return false;
+            }
+
+            if (fullName === "") {
+          showAlert("Please enter your full name.");
+          return false;
+        }
+
+        // Validate full name format
+        const nameRegex = /^[A-Za-z\s]+$/;
+        if (!nameRegex.test(fullName)) {
+          showAlert("Please enter a valid full name with letters and spaces only.");
+          return false;
+        }
+        
+    
+            if (email === "") {
+              showAlert("Please enter your email.");
+              return false;
+            }
+    
+            if (phoneNumber === "") {
+              showAlert("Please enter your phone number.");
+              return false;
+            }
+    
+            // Validate phone number format
+            const phoneRegex = /^\d+$/;
+            if (!phoneRegex.test(phoneNumber)) {
+              showAlert("Please enter a valid phone number with digits only.");
+              return false;
+            }
+    
+            if (birthday === "") {
+              showAlert("Please enter your birthday.");
+              return false;
+            }
+    
+            showAlert("Registration successful!");
+            registrationForm.reset();
+    
+            // Redirect to the dashboard
+            window.location.href = "dashboard.html";
+          }
+    
+          registration();
+        });
+    
+        function showAlert(message) {
+          alert(message);
+        }
+      });
+    </script>
+    
+    
+  
+</body>
+
+</html>

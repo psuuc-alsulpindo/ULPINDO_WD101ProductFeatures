@@ -1,0 +1,30 @@
+
+.content{
+    margin-right: 6%;
+    margin-top: 10%;
+
+}
+.navbar {
+    font-weight: 600;
+    background-color: #bdfff6;
+}
+
+.navbar-nav li {
+    padding-left:30px;
+    padding-right:30px;
+  }
+
+.content h1{
+    font-size: 4vw;
+}
+.content p{
+ font-size: 2vw;
+ font-weight: bolder;
+}
+#love-button{
+    font-size: 2vw;
+    
+}
+.navbar-brand{
+    font-size: 2vw;
+}

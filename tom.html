@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'>
+  <script src="https://use.typekit.net/hoy3lrg.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+  
+  <style>
+  body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   
+    </style>
+  </head>
+  
+  <body>
+
+    <section class="navigation"> 
+      <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #fbebd8;">
+        <div class="container-fluid" style="margin-left: 3%; margin-right: 8%">
+          <a class="navbar-brand" href="#" style="color:#c44953">
+            <img src="images/logo1.png" alt="Logo" width="60" height="50" class="d-inline-block align-items-center">
+            <strong> Love<span class="text-dark">Link</span></strong>
+          </a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="dashboard.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="matches.html">Matches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="messages.html">Messages</a>
+              </li>
+            </ul>
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="images/alu41.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+    
+              <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item small" href="profile.html">Account Settings</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <a class="dropdown-item small" href="index.html#services">Services</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <a class="dropdown-item small" href="index.html#help">FAQs</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <a class="dropdown-item small" href="index.html">Log out</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <div id="frame">
+      <div id="sidepanel">
+        <div id="profile">
+          <div class="wrap">
+            <img id="profile-img" src="images/alu41.png" class="online" alt="" />
+            <p>Alleah Lyzet</p>
+            <i class="fa fa-chevron-down expand-button" aria-hidden="true"></i>
+            <div id="status-options">
+              <ul>
+                <li id="status-online" class="active"><span class="status-circle"></span> <p>Online</p></li>
+                <li id="status-away"><span class="status-circle"></span> <p>Away</p></li>
+                <li id="status-busy"><span class="status-circle"></span> <p>Busy</p></li>
+                <li id="status-offline"><span class="status-circle"></span> <p>Offline</p></li>
+              </ul>
+            </div>
+            <div id="expanded">
+              <label for="twitter"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></label>
+              <input name="twitter" type="text" value="alleahllyzet" />
+              <label for="twitter"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></label>
+              <input name="twitter" type="text" value="alleah24" />
+              <label for="twitter"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></label>
+              <input name="twitter" type="text" value="alleah.lyzeet" />
+          </div>
+          </div>
+        </div>
+            <div id="search">
+                <label for=""><i class="fa fa-search" aria-hidden="true"></i></label>
+                <input type="text" placeholder="Search..." />
+            </div>
+            <div id="contacts">
+                <ul>
+                    <li class="contact active">
+                        <div class="wrap">
+                            <span class="contact-status status-offline"></span>
+                            <img src="images/tom.jpg" alt="" />
+                            <div class="meta">
+                                <p class="name">Tom Holland</p>
+                                <p class="preview"><b> Say hi to Tom 👋 </b></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contact">
+                        <a href="danielmes.html" style="text-decoration: none; color: inherit;">
+                          <div class="wrap">
+                            <span class="contact-status online"></span>
+                            <img src="images/daniel.jpg" alt="dan">
+                            <div class="meta">
+                              <p class="name">Daniel Padilla</p>
+                              <p class="preview">Slr, may tinapos lang na activity</p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+        
+                    <li class="contact">
+                        <a href="jungkook.html" style="text-decoration: none; color: inherit;"></a>
+                        <div class="wrap">
+                            <span class="contact-status away"></span>
+                            <img src="images/jung.jpg" alt="" />
+                            <div class="meta">
+                                <p class="name">Kim Jung Kook</p>
+                                <p class="preview">geh, sabi mo eh 🙄</p>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="contact">
+                        <div class="wrap">
+                            <span class="contact-status online"></span>
+                            <img src="images/reid.jpg" alt="" />
+                            <div class="meta">
+                                <p class="name">James Reid</p>
+                                <p class="preview">Hi, saw u in LoveLink, u're cute btw</p>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="contact">
+                        <div class="wrap">
+                            <span class="contact-status busy"></span>
+                            <img src="images/chen.jpg" alt="" />
+                            <div class="meta">
+                                <p class="name">Kim Jong Dae</p>
+                                <p class="preview">Wyd? Kain ka na ha</p>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="contact">
+                        <div class="wrap">
+                            <span class="contact-status"></span>
+                            <img src="images/sehun.jpg" alt="" />
+                            <div class="meta">
+                                <p class="name">Oh Sehun</p>
+                                <p class="preview">Thanks Alleah!</p>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="contact">
+                      <a href="harry.html" style="text-decoration: none; color: inherit;">
+                        <div class="wrap">
+                            <span class="contact-status"></span>
+                            <img src="images/harrry.jpg" alt="" />
+                            <div class="meta">
+                                <p class="name">Harry Styles</p>
+                                <p class="preview">Try mo panoorin how to getaway with murder</p>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="contact">
+                        <div class="wrap">
+                            <span class="contact-status busy"></span>
+                            <img src="images/pitt.jpg" alt="" />
+                            <div class="meta">
+                                <p class="name">Brad Pitt</p>
+                                <p class="preview">What's your biggest regret in life?</p>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="contact">
+                        <div class="wrap">
+                            <span class="contact-status"></span>
+                            <img src="images/evans.jpg" alt="" />
+                            <div class="meta">
+                                <p class="name">Chris Evans</p>
+                                <p class="preview">Kilala mo si Taylor Swift?</p>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="contact">
+                        <div class="wrap">
+                            <span class="contact-status"></span>
+                            <img src="images/rob.jpg" alt="" />
+                            <div class="meta">
+                                <p class="name">Robert Pattinson</p>
+                                <p class="preview"><span>You:</span> Grabe ka na pi</p>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="content mt-3">
+            <div class="contact-profile">
+                <img src="images/tom.jpg" alt="" />
+                <p>Tom Holland</p>
+                <div class="social-media">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                     <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="messages">
+                <ul>
+
+                </ul>
+            </div>
+
+            <div class="message-input ">
+                <div class="wrap">
+                <input type="text" placeholder="Write your message..." />
+                <i class="fa fa-paperclip attachment" aria-hidden="true"></i>
+                <button class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+      <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: white;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.lovelink {
+  margin-top: 10px;
+  width: 100zvw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+
+.loaded.lovelink {
+  opacity: 1;
+}
+
+.lovelink--status {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+
+.lovelink--status i {
+  font-size: 100px;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  width: 100px;
+  margin-left: -50px;
+}
+
+.lovelink_love .fa-heart {
+  opacity: 0.7;
+  transform: scale(1);
+}
+
+.lovelink_nope .fa-remove {
+  opacity: 0.7;
+  transform: scale(1);
+}
+
+.lovelink--cards {
+  flex-grow: 1;
+  padding-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.lovelink--card {
+  display: inline-block;
+  width: 90vw;
+  max-width: 300px;
+  height: 65vh;
+  background: #fbebd8;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  will-change: transform;
+  transition: all 0.3s ease-in-out;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.moving.lovelink--card {
+  transition: none;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.lovelink--card img {
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.lovelink--card h3 {
+  font-size: 32px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.lovelink--card p {
+  margin-bottom: 6px;
+  font-size: 17px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.lovelink--buttons {
+  flex: 0 0 100px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.lovelink--buttons button {
+  border-radius: 50%;
+  line-height: 60px;
+  width: 60px;
+  border: 0;
+  background: #c44953;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.lovelink--buttons button:focus {
+  outline: 0;
+}
+
+.lovelink--buttons i {
+  font-size: 32px;
+  vertical-align: middle;
+}
+
+.lovelink--button button love1 {
+
+}
+
+.fa-heart {
+  color: #FFACE4;
+}
+
+.fa-remove {
+  color: #CDD6DD;
+}
